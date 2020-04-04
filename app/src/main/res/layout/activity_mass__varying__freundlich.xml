@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="end"
+    android:id="@+id/mass_varying_conc_f"
+    tools:context=".Mass_Varying_Freundlich">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="65dp"
+        tools:ignore="ExtraText">
+
+
+        <TextView
+            android:id="@+id/vary_mass_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Freundlich Isotherm"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle = "bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Calibre"
+            android:text="Mass of the Adsorbents (g) in descending order"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:paddingTop="20dp"
+            android:textStyle = "bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorPrimary"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+
+                android:id="@+id/txt_time_m1_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:fontFamily="@font/aref_ruqaa"
+                android:hint="Enter the Mass of the Adsorbents (m1 in g) at Concentration C1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/txt_time_m2_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:fontFamily="@font/aref_ruqaa"
+                android:layout_marginStart="5dp"
+                android:hint="Enter the Mass of the Adsorbents (m2 in g) at Concentration C2"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/txt_time_m3_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:fontFamily="@font/aref_ruqaa"
+                android:layout_marginStart="5dp"
+                android:hint="Enter the Mass of the Adsorbents (m3 in g) at Concentration C3"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/txt_time_m4_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:fontFamily="@font/aref_ruqaa"
+                android:layout_marginStart="5dp"
+                android:hint="Enter the Mass of the Adsorbents (m4 in g) at Concentration C4"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/txt_time_m5_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:fontFamily="@font/aref_ruqaa"
+                android:layout_marginStart="5dp"
+                android:hint="Enter the Mass of the Adsorbents (m5 in g) at Concentration C5"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            tools:ignore="ExtraText">
+
+            />
+            <Button
+                android:id="@+id/next_mass_f"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/button_freundlich"
+                android:text="Next"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp">
+
+
+            </Button>
+
+            <Button
+                android:id="@+id/back_mass_f"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/button_freundlich"
+                android:text="Back"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp">
+
+
+            </Button>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/save_mass_f"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:background="@drawable/button_freundlich"
+            android:text="Save to Database"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme"/>
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_mass_varying_f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Toolbar" />
+
+
+    </FrameLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_View_mass_varying_f"
+        app:menu="@menu/menu_langmuir_freundlcih"
+        android:background="@color/new_navigation"
+        android:layout_gravity="start"
+        app:itemTextColor="#fff" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

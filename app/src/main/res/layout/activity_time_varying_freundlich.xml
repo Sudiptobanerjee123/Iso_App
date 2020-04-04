@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="end"
+    android:id="@+id/time_varying_freundlich"
+    android:background="@color/background"
+    tools:context=".time_varying_freundlich">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="65dp"
+        tools:ignore="ExtraText">
+
+
+        <TextView
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Freundlich Isotherm"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle = "bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Calibre"
+            android:text="Final Concentration of the Adsorbate (mg/l)"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:paddingTop="20dp"
+            android:textStyle = "bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorPrimary"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            <EditText-->
+
+<!--                android:id="@+id/txt_time_min_freundlich"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:layout_marginEnd="25dp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:ems="10"-->
+<!--                android:fontFamily="sans-serif-black"-->
+<!--                android:hint="Enter the time in minutes"-->
+<!--                android:inputType="text"-->
+
+<!--                android:textSize="15sp"-->
+<!--                android:textStyle="bold|italic" />-->
+
+            <EditText
+
+                android:id="@+id/txt_time_C1_freundlich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:fontFamily="@font/aref_ruqaa"
+                android:layout_marginLeft="5dp"
+                android:hint="Enter the Concentration (C1)"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+
+                android:id="@+id/txt_time_C2_freundlich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:fontFamily="@font/aref_ruqaa"
+                android:layout_marginStart="5dp"
+                android:hint="Enter the Concentration (C2)"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+
+                android:id="@+id/txt_time_C3_freundlich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:fontFamily="@font/aref_ruqaa"
+                android:layout_marginStart="5dp"
+                android:hint="Enter the Concentration (C3)"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+
+                android:id="@+id/txt_time_C4_freundlich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:fontFamily="@font/aref_ruqaa"
+                android:layout_marginStart="5dp"
+                android:hint="Enter the Concentration (C4)"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+
+                android:id="@+id/txt_time_C5_freundlich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:fontFamily="@font/aref_ruqaa"
+                android:layout_marginStart="5dp"
+                android:hint="Enter the Concentration (C5)"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            tools:ignore="ExtraText">
+
+            />
+            <Button
+                android:id="@+id/calculate_time_freundlich"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/button_freundlich"
+                android:text="Calculate"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp">
+
+
+            </Button>
+
+            <Button
+                android:id="@+id/back_time_freundlich"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/button_freundlich"
+                android:text="Back"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp">
+
+
+            </Button>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/save_time_freundlich"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:background="@drawable/button_freundlich"
+            android:text="Save to Database"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme"/>
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_time_varying_freundlich1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Toolbar" />
+
+
+    </FrameLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_View_time_varying_freundlich"
+        app:menu="@menu/menu_langmuir_freundlcih"
+        android:background="@color/new_navigation"
+        android:layout_gravity="start"
+        app:itemTextColor="#fff" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

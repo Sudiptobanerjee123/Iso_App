@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="end"
+    android:id="@+id/drawer_langmuir"
+    android:background="@color/background"
+    tools:context=".Langmuir">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Langmuir Isotherm"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:paddingTop="60dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorPrimary"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="Calibre"
+        android:text="At Equilibrium"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:paddingTop="140dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorPrimaryDark"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:gravity="center">
+
+
+        <EditText
+
+            android:id="@+id/txt_massads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="Enter the Mass of the Adsorbents"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_mass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorPrimary"
+
+
+            />
+
+        <EditText
+            android:id="@+id/txt_initconc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="Enter the Initial Concentration (Co)"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_conc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/calculatebutton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_langmuir"
+                android:text="Next"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp">
+
+
+            </Button>
+            <Button
+                android:id="@+id/back_langmuir_button"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_langmuir"
+                android:text="Back"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp">
+
+
+            </Button>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_langmuir"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:background="@drawable/button_langmuir"
+            android:text="Save to Database"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp">
+
+
+        </Button>
+
+<!--        <Button-->
+<!--            android:id="@+id/sign_out_google"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/registerbutton"-->
+<!--            android:text="Sign out of Google"-->
+<!--            android:textColor="@color/colorPrimary"-->
+<!--            android:textSize="14sp">-->
+
+
+<!--        </Button>-->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme"/>
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_langmuir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Toolbar" />
+
+
+    </FrameLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_View_langmuir"
+        app:menu="@menu/menu_langmuir_freundlcih"
+        android:background="@color/new_navigation"
+        android:layout_gravity="start"
+        app:itemTextColor="#fff" />
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="end"
+    android:id="@+id/drawer_freundlich"
+    android:background="@color/background"
+    tools:context=".Freundlich">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Freundlich Isotherm"
+        android:textAlignment="center"
+        android:paddingTop="60dp"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorPrimary"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="Calibre"
+        android:text="At Equilibrium"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:paddingTop="140dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorPrimaryDark"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+        <EditText
+
+            android:id="@+id/txt_mass_freundlich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Enter the Mass of the Adsorbents"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_mass_freundlich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorPrimary"
+
+
+            />
+
+        <EditText
+            android:id="@+id/txt_initconc_freundlich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Enter the Initial Concentration (Co)"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_conc_freundlich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/calculatebutton_freundlich"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/freundlich_button"
+                android:text="Next"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp">
+            </Button>
+            <Button
+                android:id="@+id/backbutton_choose_freundlich_1"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/freundlich_button"
+                android:text="Back"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp">
+
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/save_freundlich"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:background="@drawable/freundlich_button"
+            android:text="Save to Database"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp">
+
+
+        </Button>
+
+<!--        <Button-->
+<!--            android:id="@+id/sign_out_google_freundlich"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/freundlich_button"-->
+<!--            android:text="Sign out of Google"-->
+<!--            android:textColor="@color/colorPrimary"-->
+<!--            android:textSize="14sp">-->
+
+
+<!--        </Button>-->
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme"/>
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_freundlich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Toolbar" />
+
+
+    </FrameLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_View_freundlich"
+        app:menu="@menu/menu_langmuir_freundlcih"
+        android:background="@color/new_navigation"
+        android:layout_gravity="start"
+        app:itemTextColor="#fff" />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

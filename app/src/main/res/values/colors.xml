@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2D383F</color>
+    <color name="colorPrimaryDark">#A81B77BE</color>
+    <color name="colorAccent">#FF6C02</color>
+    <color name="background">#ffffff</color>
+    <color name="navigation">#157E73</color>
+    <color name="Freundlich_Button">#D18A22</color>
+    <color name="Langmuir_Button">#B847CE</color>
+    <color name="Toolbar">#A7251B</color>
+    <color name="new_navigation">#DB4112</color>
+    <color name="time_varying_langmuir">#F0665B</color>
+    <color name="time_varying_freundlich">#7488F1</color>
+</resources>
